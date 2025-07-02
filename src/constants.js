@@ -1,1 +1,1 @@
-export const backendUrl = "http://localhost:4000";
+export const backendUrl = "https://ai-resume-checker-backend-pzu8.onrender.com";
