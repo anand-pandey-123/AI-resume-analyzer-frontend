@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { backendUrl } from "../constants";
+
 
 const ResumeAnalyzer = () => {
   const [jobDescription, setJobDescription] = useState("");
@@ -22,7 +24,7 @@ const ResumeAnalyzer = () => {
       formData.append("resume", file);
 
       const response = await axios.post(
-        "http://localhost:4000/api/v1/analyze-resume",
+        backendUrl+"/api/v1/analyze-resume",
         formData,
         {
           headers: {
