@@ -49,7 +49,7 @@ const ResumeAnalyzer = () => {
     event.preventDefault();
 
     if (!jobDescription || !resumeFile) {
-      alert("Please enter a job description and upload a resume.");
+      alert("Please enter job description and upload a resume.");
       return;
     }
 
